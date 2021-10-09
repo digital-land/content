@@ -1,6 +1,7 @@
 # install the depandancies
-init:
+init::
 	npm i
+	cp node_modules/netlify-cms/dist/netlify-cms.js cms/cms.js
 
 # run the netlify-cms-proxy for developing locally (not commiting to github)
 netlify-cms-proxy-server:
