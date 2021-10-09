@@ -1,7 +1,7 @@
 {
   "name": "digital-land-content",
   "version": "1.0.0",
-  "description": "",
+  "description": "Content and CMS for Digital Land Site",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/digital-land/content.git"
