@@ -1,24 +1,24 @@
 ## Overview
 
+Content repository for digital-land.info
 
-## Requirement
+## Requirements
 
 - Node and NPM
-- Python 3
+- Python and ability to use Makefiles
 
 ## Usage
 
 Install dependencies to your machine with: `make init`
 
-## Features
-
-
 ## Reference
 
+- [NetlifyCMS Documentation](https://www.netlifycms.org/docs/intro/)
 
 ## Author
 
+- Digital Land Team
 
 ## License
 
-Please see license.txt.
+Please see [LICENSE](LICENSE).
