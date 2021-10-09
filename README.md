@@ -4,12 +4,14 @@ Content repository for digital-land.info
 
 ## Requirements
 
-- Node and NPM
+- Node and NPM (Suggest using Node Version Manager (known as NVM))
 - Python and ability to use Makefiles
 
 ## Usage
 
-Install dependencies to your machine with: `make init`
+1. Install dependencies to your machine with: `make init`
+2. Run locally with `make serve`
+3. The CMS should load in your browser
 
 ## Reference
 
@@ -17,7 +19,7 @@ Install dependencies to your machine with: `make init`
 
 ## Author
 
-- Digital Land Team
+- [Paul Smith](https://twitter.com/paulmsmith) - Digital Land Team
 
 ## License
 
