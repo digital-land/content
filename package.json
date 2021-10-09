@@ -1,0 +1,25 @@
+{
+  "name": "digital-land-content",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-land/content.git"
+  },
+  "keywords": [
+    "node",
+    "python",
+    "netlifycms"
+  ],
+  "author": "Paul Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digital-land/content/issues"
+  },
+  "homepage": "https://github.com/digital-land/content#readme",
+  "dependencies": {
+    "browsersync": "^0.0.1-security",
+    "netlify-cms": "^2.10.169",
+    "netlify-cms-proxy-server": "^1.3.20"
+  }
+}

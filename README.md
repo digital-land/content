@@ -3,22 +3,12 @@
 
 ## Requirement
 
+- Node and NPM
+- Python 3
 
 ## Usage
 
-### Locally
-
-#### With BrowserSync
-
-1. Install browsersync via NPM:
-```shell
-npm i -g browsersync
-```
-
-2. Run browsersync from the content directory 
-```
-browser-sync start --server '.' --files '.'
-```
+Install dependencies to your machine with: `make init`
 
 ## Features
 
