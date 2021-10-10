@@ -8,6 +8,30 @@
 <body>
 <script>window.CMS_MANUAL_INIT = true</script>
 <script src="cms/assets/netlify-cms/netlify-cms.js"></script>
+<script>const { CMS, initCMS: init } = window; let dlConfig = {}</script>
 <script src="cms/cms.config.js"></script>
+<script>
+  initCMS({
+    config: {
+      backend: {
+        name: "github",
+        // the repository the CMS will commit and push to
+        repo: "digital-land/content",
+        // the branch that will get deployed
+        branch: "main",
+        // the openAuth Github handshake service for digital land
+        base_url: "https://dl-cms-oauth-service.herokuapp.com",
+      },
+      // prevents NetlifyCMS from attempting to load a local YAML config file
+      load_config_file: false,
+      // if this resolves to true we should be running locally
+      local_backend: (location.hostname === "localhost" || location.hostname === "127.0.0.1"),
+      logo_url: "cms/assets/dl-logo.svg",
+      public_folder: "/cms/assets/uploads",
+      media_folder: "cms/assets/uploads",
+      collections: dlConfig.collections // this is configured in cms/cms.config.js
+    },
+  });
+</script>
 </body>
 </html>
