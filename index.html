@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DLUHC - Digital Land - Content Manager</title>
+  <title>DLUHC - Digital Land - File Manager</title>
 </head>
 <body>
 <!-- this tell NetlifyCMS to 'manually init' so we can use a custom config not a yml file -->
 <script>window.CMS_MANUAL_INIT = true</script>
 <!-- this include the netlify cms distribution install via NPM -->
-<script src="cms/assets/netlify-cms/netlify-cms.js"></script>
+<script src="manager/assets/netlify-cms/netlify-cms.js"></script>
 <!-- this triggers the manual init -->
 <script>const { CMS, initCMS: init } = window; let dlConfig = {};</script>
 <!-- this is the digital land custom config separated for easier CMS configuration -->
-<script src="cms/cms.config.js"></script>
+<script src="manager/filemanager.config.js"></script>
 <!-- this fires in the init method with our CMS configuration -->
 <script>
   initCMS({
@@ -21,7 +21,7 @@
       backend: {
         name: "github",
         // the repository the CMS will commit and push to
-        repo: "digital-land/content",
+        repo: "digital-land/file-manager",
         // the branch that will get deployed
         branch: "main",
         // the openAuth Github handshake service for digital land
@@ -31,9 +31,9 @@
       load_config_file: false,
       // if this resolves to true we should be running locally
       local_backend: (location.hostname === "localhost" || location.hostname === "127.0.0.1"),
-      logo_url: "cms/assets/dl-logo.svg",
-      public_folder: "/cms/assets/uploads",
-      media_folder: "cms/assets/uploads",
+      logo_url: "manager/assets/dl-logo.svg",
+      public_folder: "/manager/assets/uploads",
+      media_folder: "manager/assets/uploads",
       collections: dlConfig.collections // this is configured in cms/cms.config.js
     },
   });
