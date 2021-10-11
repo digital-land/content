@@ -1,4 +1,4 @@
 .DS_Store
 .vscode
 node_modules
-cms/assets/netlify-cms
+manager/assets/netlify-cms
