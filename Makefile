@@ -1,8 +1,8 @@
 # install the depandancies and make a home for the cms
 init::
 	npm i
-	mkdir cms/assets/netlify-cms
-	cp -a node_modules/netlify-cms/dist/. cms/assets/netlify-cms/
+	mkdir manager/assets/netlify-cms
+	cp -a node_modules/netlify-cms/dist/. manager/assets/netlify-cms/
 
 # run the netlify-cms-proxy for developing locally (not commiting to github)
 netlify-cms-proxy-server:
