@@ -6,10 +6,15 @@
   <title>DLUHC - Digital Land - Content Manager</title>
 </head>
 <body>
+<!-- this tell NetlifyCMS to 'manually init' so we can use a custom config not a yml file -->
 <script>window.CMS_MANUAL_INIT = true</script>
+<!-- this include the netlify cms distribution install via NPM -->
 <script src="cms/assets/netlify-cms/netlify-cms.js"></script>
-<script>const { CMS, initCMS: init } = window; let dlConfig = {}</script>
+<!-- this triggers the manual init -->
+<script>const { CMS, initCMS: init } = window; let dlConfig = {};</script>
+<!-- this is the digital land custom config separated for easier CMS configuration -->
 <script src="cms/cms.config.js"></script>
+<!-- this fires in the init method with our CMS configuration -->
 <script>
   initCMS({
     config: {
